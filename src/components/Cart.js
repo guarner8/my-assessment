@@ -18,7 +18,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   )
 
   return (
-    <div>
+    <div className="container">
       <h3>Your Cart</h3>
       <div>{nodes}</div>
       <p>Total: &#36;{total}</p>

@@ -2,17 +2,34 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
 
+// Import styles objects
+import {styles} from './ProductItemStyle.js'
+
+// Image path
+const imgPath = "/imgs"
+
 const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div style={{ marginBottom: 20 }}>
+  <div className="row" style={{ marginBottom: 20 }}>
+    <div className="col-4">
+        <picture>
+            <source srcSet={imgPath + "/" + product.title + "Small.png"} media="(max-width:992px)" />
+            <img style={styles.imgStyle} src={imgPath + "/" + product.title + ".png"} />
+        </picture>
+    </div>
+
+    <div className="col" style={styles.productInfo}>
     <Product
       title={product.title}
       price={product.price}
       inventory={product.inventory} />
-    <button
-      onClick={onAddToCartClicked}
-      disabled={product.inventory > 0 ? '' : 'disabled'}>
-      {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
-    </button>
+        <div className="add-to-cart">
+            <button
+                onClick={onAddToCartClicked}
+                disabled={product.inventory > 0 ? '' : 'disabled'}>
+                {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
+            </button>
+        </div>
+    </div>
   </div>
 )
 

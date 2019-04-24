@@ -39,4 +39,12 @@ You're welcome (but not required) to add any libraries you think would be helpfu
 
 Please also update this README file: we'd love to see notes on your decision-making process, links to the most exciting pieces of code, or anything else that will give us additional context when reviewing your assessment.
 
-Testing first commit
+Development notes:
+* I have begun to look through the project's code and decided to implement the design using bootstrap and js files to style the website. 
+* I will include the jsx styles objects above each file in which I am implementing individual style as to work slightly faster. I am going to write my code to be able to extract this easily and set it in a different file if needed.
+
+Progress: 
+* Top bar (logo / cart) is responsive and looks well across displays
+    * Need to add shopping cart png / change font
+* Image resize is responsive
+
