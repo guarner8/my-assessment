@@ -1,0 +1,31 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.company-logo {
+    margin-left: "50px";
+}
+
+.desktop-cart {
+    display: inline;
+}
+
+.img-style {
+    height: 282px;
+    width: 455px;
+    padding-right: 0px;
+}
+
+.add-to-cart {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.product-info {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.product-container {
+    background-color: #FFFFFF;
+    padding-left: 0px;
+}
