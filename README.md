@@ -47,4 +47,5 @@ Progress:
 * Top bar (logo / cart) is responsive and looks well across displays
     * Need to add shopping cart png / change font
 * Image resize is responsive
+* Product boxes for desktop version look good
 

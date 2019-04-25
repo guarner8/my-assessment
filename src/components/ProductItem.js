@@ -9,24 +9,25 @@ import {styles} from './ProductItemStyle.js'
 const imgPath = "/imgs"
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div className="row" style={{ marginBottom: 20 }}>
-    <div className="col-4">
+  <div className="d-flex flex-wrap" style={{ marginBottom: 20 }}>
+    <div className="flex-column" style={styles.imgStyle}>
         <picture>
             <source srcSet={imgPath + "/" + product.title + "Small.png"} media="(max-width:992px)" />
             <img style={styles.imgStyle} src={imgPath + "/" + product.title + ".png"} />
         </picture>
     </div>
 
-    <div className="col" style={styles.productInfo}>
+    <div className="flex-column flex-grow-1" style={styles.productInfo}>
     <Product
       title={product.title}
       price={product.price}
       inventory={product.inventory} />
         <div className="add-to-cart">
             <button
+                style={styles.buttons}
                 onClick={onAddToCartClicked}
                 disabled={product.inventory > 0 ? '' : 'disabled'}>
-                {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
+                {product.inventory > 0 ? 'ADD TO CART' : 'Sold Out'}
             </button>
         </div>
     </div>
