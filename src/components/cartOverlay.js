@@ -1,9 +1,9 @@
 function on() {
-    document.getElementById("overlay").style.display = "block";
+    document.querySelector(".background-overlay").style.display = "block";
 }
 
 function off() {
-    document.getElementById("overlay").style.display = "none";
+    document.querySelector(".background-overlay").style.display = "none";
 }
 
 const overlay = {

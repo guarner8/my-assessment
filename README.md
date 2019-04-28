@@ -50,4 +50,12 @@ Progress:
 * Product boxes for desktop version look good
 * Ended up using a css file for media queries which made the code a little messy, but it serves its purpose. There is a small amount of redundancy.
 * Finished up the appearance for the products, will now start to work on the cart overlay.
+* Finished up basic cart overlay, could use some more work
+
+Known bugs:
+* Cart is empty message does not change when an item is added
+* Mobile version cart is not centered when resized
+* No update on checkout feature
+* No # of items shown in cart
+* CSS code is redundant in media queries and not well organized because it interferes with jsx objects
 

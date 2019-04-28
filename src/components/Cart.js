@@ -8,27 +8,41 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
     products.map(product =>
-      <Product
-        title={product.title}
-        price={product.price}
-        quantity={product.quantity}
-        key={product.id}
-      />
+      <div className="checkout-item">
+        <img src={'/imgs/' + product.title + '.png'} className="checkout-img"/>
+        <Product
+          title={product.title}
+          price={product.price}
+          quantity={products.length}
+          key={product.id}
+        />
+      </div>
     )
   ) : (
-    <em>Please add some products to cart.</em>
+      <div className="container">
+        <img className="row checkout-cart" src="/imgs/checkout-cart.png" alt="cart"/>
+        <br/>
+        <em className="row checkout-msg">Please add some products to your cart.</em>
+      </div>
   )
 
   return (
-    <div className="container" id="overlay" onClick={overlay.off}>
-      <h3>Your Cart</h3>
-      <div>{nodes}</div>
-      <p>Total: &#36;{total}</p>
-      <button onClick={onCheckoutClicked}
-        disabled={hasProducts ? '' : 'disabled'}>
-        Checkout
-      </button>
-    </div>
+      <div className="background-overlay">
+        <div className="container cart-container">
+            <img src="/imgs/close.png" alt="close" onClick={overlay.off}/>
+            <h3>Your cart</h3>
+            <hr className="cart-break"/>
+            <div className="item">{nodes}</div>
+            <hr className="cart-break checkout-brk" style={hasProducts ? {display: 'block'} : {display: 'none'}}/>
+            <p className="total">{hasProducts ? 'Total: $' + total : ''}</p>
+            <button onClick={onCheckoutClicked}
+                className = "checkout"
+                style={hasProducts ? {display: 'block'} : {display: 'none'} }
+                disabled={hasProducts ? '' : 'disabled'}>
+                Checkout
+            </button>
+        </div>
+      </div>
   )
 }
 
