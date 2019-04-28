@@ -5,12 +5,12 @@ import PropTypes from 'prop-types'
 import {styles} from './ProductItemStyle.js'
 
 const Product = ({ price, inventory, title }) => (
-  <div style={styles.itemInfo}>
-        <div style={styles.firstProductLine}>
-            <span style={styles.productName}>{title}</span> 
-            <span style={styles.itemCost}>&#36;{price}</span>
+  <div style={styles.itemInfo} className="item-info">
+        <div style={styles.firstProductLine} className="fp-line">
+            <span className="product-name" style={styles.productName}>{title}</span> 
+            <span className="product-cost" style={styles.itemCost}>&#36;{price}</span>
         </div>
-        <p style={styles.itemQuant}>{inventory ? `${inventory} REMAINING` : null}</p>
+        <p className="item-quant" style={styles.itemQuant}>{inventory ? `${inventory} REMAINING` : null}</p>
   </div>
 )
 

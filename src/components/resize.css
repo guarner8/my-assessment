@@ -1,0 +1,134 @@
+.product-container {
+    border-radius: 5px;
+}
+
+/* Phone display */
+@media only screen and (max-width: 768px) {
+    #cart {
+        margin-bottom: 3px;
+        margin-right: 2px;
+    }
+
+    .logo {
+        font-size: 2em !important;
+    }
+
+    .imgStyle {
+        display: block !important;
+    }
+
+    .product-info {
+        display: block !important;
+        height: 152px;
+        flex: auto;
+    }
+
+    .product-name {
+        font-size: 1.3em !important;
+    }
+    
+    .add-to-cart {
+        margin-left: 7px;
+    }
+
+    .resize-button {
+        margin-top: 0px !important; 
+        font-size: .8em !important;
+        padding: 6px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        font-weight: 300 !important;
+        margin-left: 0px !important;
+    }
+
+    .item-info {
+        margin-top: 15px;    
+        padding: 5px !important;
+        height: 80px;
+    }
+
+    .item-quant {
+        margin-top: 8px;
+        font-size: .8em !important;
+    }
+
+    .product-cost {
+        margin-top: 5px;
+        padding: 0px !important;
+    }
+
+    .product-container {
+        margin: auto;
+        width: 285px;
+    }
+
+}
+
+/* Tablet display */
+@media only screen and (max-width: 1199px) and (min-width: 769px){
+    #cart {
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    
+    .logo {
+        font-size: 2.5em !important;
+    }
+
+    .logo-bar {
+        margin-top: 35px !important;
+    }
+
+    .product-info {
+        height: 160px;
+        padding: 0px !important;
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .item-info {
+        margin-top: 15px;    
+        padding: 5px !important;
+        height: 80px;
+    }
+
+    .item-quant {
+        margin-top: 0px;
+        margin-left: 1px;
+        font-size: .8em !important;
+    }
+
+    .product-cost {
+        font-size: 1.2em;
+        margin-right: 20px;
+        margin-top: 13px;
+        padding: 0px !important;
+    }
+
+    .product-name {
+        padding: 0px !important;
+    }
+
+    .resize-button {
+        margin-top: 30px !important; 
+        font-size: .9em !important;
+        padding: 10px !important;
+        padding-left: 26px !important;
+        padding-right: 26px !important;
+        font-weight: 300 !important;
+        margin-left: 0px !important;
+    }
+}
+
+/* Desktop display */
+@media only screen and (min-width: 1200px) {
+   #cart {
+        margin-bottom: 5px;
+        margin-right: 5px;
+   }
+
+    .logo-bar {
+        margin-top: 35px !important;
+    }
+
+}

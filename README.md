@@ -48,4 +48,6 @@ Progress:
     * Need to add shopping cart png / change font
 * Image resize is responsive
 * Product boxes for desktop version look good
+* Ended up using a css file for media queries which made the code a little messy, but it serves its purpose. There is a small amount of redundancy.
+* Finished up the appearance for the products, will now start to work on the cart overlay.
 

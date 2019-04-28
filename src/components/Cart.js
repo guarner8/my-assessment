@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
 
+import {overlay} from './cartOverlay.js'
+
 const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
@@ -18,7 +20,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   )
 
   return (
-    <div className="container">
+    <div className="container" id="overlay" onClick={overlay.off}>
       <h3>Your Cart</h3>
       <div>{nodes}</div>
       <p>Total: &#36;{total}</p>

@@ -1,16 +1,13 @@
 const imgStyle = {
+    boxSizing: "border-box",
     padding: "0px",
     backgroundColor: "white"
 }
 
 const firstProductLine = {
+    boxSizing: "border-box",
     display: "flex",
     justifyContent: "space-between"
-}
-
-const productInfo = {
-    backgroundColor: "#ffffff",
-    padding: "0px"
 }
 
 const itemInfo = {
@@ -32,7 +29,7 @@ const productName = {
 }
 
 const buttons = {
-    marginTop: "35px",
+    marginTop: "30px",
     padding: "10px",
     paddingLeft: "30px",
     paddingRight: "30px",
@@ -44,7 +41,6 @@ const buttons = {
 }
 
 const styles = {
-    productInfo: productInfo,
     imgStyle: imgStyle,
     itemInfo: itemInfo,
     buttons: buttons,
